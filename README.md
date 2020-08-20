@@ -48,7 +48,7 @@ jobs:
           // .github/workflows/ci.yml/0_build/0.js
 ```
 
-The autofixing (`--fix`) is supported, but it's still experimental and whitespace handling of YAML is different from JS, so be sure to check the result. 
+The autofixing (`--fix`) is supported, but it's still experimental and whitespace handling of YAML is different from JS, so be sure to check the result.
 
 
 ### Advanced Configuration
