@@ -1,13 +1,14 @@
 # eslint-plugin-actions
 [![npm](https://img.shields.io/npm/v/eslint-plugin-actions.svg)](https://www.npmjs.com/package/eslint-plugin-actions)
 [![CI](https://github.com/ylemkimon/eslint-plugin-actions/workflows/CI/badge.svg?branch=master&event=push)](https://github.com/ylemkimon/eslint-plugin-actions/actions?query=workflow%3ACI)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 Lint JS inside GitHub Actions workflow
 
 
 ## Installation
 
-You'll first need to install [ESLint](http://eslint.org) 6 or greater:
+You'll first need to install [ESLint](http://eslint.org) 6.7 or greater:
 ```
 $ npm i eslint --save-dev
 $ yarn add -D eslint
@@ -53,10 +54,11 @@ The autofixing (`--fix`) is supported, but it's still experimental and whitespac
 
 Dotfiles are ignored by ESLint by default. To lint files inside `.github`, you'll need to add `!.github` to
 `.eslintignore` file or `ignorePatterns` of your configuration file. In ESLint v6, all files having extensions
-specified by `--ext` option are included. To exclude non-workflow YAML files, add `*.yml`, `*.yaml`, and
+specified by `--ext` option are included, so to exclude non-workflow YAML files, add `*.yml`, `*.yaml`, and
 `!/.github/workflows/*.{yml,yaml}`:
-```
+```gitignore
 !/.github
+# only for ESLint v6:
 *.yml
 *.yaml
 !/.github/workflows/*.yml
