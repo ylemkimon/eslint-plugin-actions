@@ -1,0 +1,22 @@
+
+/eslint-plugin-actions/packages/test/.github/workflows/test.yml
+  14:17  warning  Only a literal block is supported by eslint-plugin-actions                                                     actions/YAMLWarning
+  18:11  error    Expected space(s) after "if"                                                                                   keyword-spacing
+  18:21  error    Requires a space after '{'                                                                                     block-spacing
+  18:21  error    Statement inside of curly braces should be on next line                                                        brace-style
+  18:21  error    Missing space before opening brace                                                                             space-before-blocks
+  18:22  error    This line has 2 statements. Maximum allowed is 1                                                               max-statements-per-line
+  18:22  error    Unexpected console statement                                                                                   no-console
+  18:41  error    Requires a space before '}'                                                                                    block-spacing
+  18:41  error    Closing curly brace should be on the same line as opening curly brace or on the line after the previous block  brace-style
+  18:41  error    Missing semicolon                                                                                              semi
+  27:11  error    'x' is not defined                                                                                             no-undef
+  28:23  error    'x' is not defined                                                                                             no-undef
+  29:27  error    Missing space before function parentheses                                                                      space-before-function-paren
+  29:30  error    Requires a space after '{'                                                                                     block-spacing
+  29:30  error    Statement inside of curly braces should be on next line                                                        brace-style
+  29:31  error    This line has 2 statements. Maximum allowed is 1                                                               max-statements-per-line
+
+✖ 16 problems (15 errors, 1 warning)
+  10 errors and 0 warnings potentially fixable with the `--fix` option.
+

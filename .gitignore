@@ -1,0 +1,22 @@
+node_modules
+*.log
+*.bak
+
+/.yarn/*
+!/.yarn/releases
+!/.yarn/plugins
+!/.yarn/sdks
+
+# Swap the comments on the following lines if you don't wish to use zero-installs
+# Documentation here: https://yarnpkg.com/features/zero-installs
+!/.yarn/cache
+#/.pnp.*
+
+# ignore large caches
+/.yarn/cache/typescript-*.zip
+/.yarn/cache/npm-npm-*.zip
+
+/lib/*
+/test/.eslintrc.js
+
+package.tgz

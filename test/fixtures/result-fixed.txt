@@ -1,0 +1,9 @@
+
+/eslint-plugin-actions/packages/test/.github/workflows/test.yml
+  14:17  warning  Only a literal block is supported by eslint-plugin-actions  actions/YAMLWarning
+  19:13  error    Unexpected console statement                                no-console
+  29:11  error    'x' is not defined                                          no-undef
+  30:23  error    'x' is not defined                                          no-undef
+
+✖ 4 problems (3 errors, 1 warning)
+

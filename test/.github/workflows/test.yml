@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  A:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/github-script@v2
+      with:
+        script: if(github){console.log(github)}
+    - uses: actions/github-script@v2
+      with:
+        script: |
+          if(github){console.log(github)}
+
+  B:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/github-script@v2
+      with:
+        script: |
+          x = 1;
+          console.log(x);
+          async function y() {return 1;
+          }
+          await y();

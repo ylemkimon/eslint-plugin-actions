@@ -1,0 +1,68 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    if: |
+      !contains(toJSON(github.event.commits.*.message), '[skip ci]') &&
+      !contains(toJSON(github.event.commits.*.message), '[ci skip]')
+    strategy:
+      matrix:
+        node: [10, 12, 14]
+        eslint: [6, 7]
+      fail-fast: false
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ matrix.node }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node }}
+
+    - name: Install dependencies
+      run: yarn --immutable
+
+    - name: Lint code
+      run: yarn test:lint
+
+    - name: Build plugin
+      run: yarn build
+
+    - name: Run tests
+      run: |
+        cd test
+        YARN_CHECKSUM_BEHAVIOR=update yarn
+        yarn add -D eslint@${{ matrix.eslint }}
+        yarn test
+
+  release:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    needs: test
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js 12
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
+
+    - name: Install dependencies
+      run: yarn --immutable
+
+    - name: Build plugin
+      run: yarn build
+
+    - name: Run semantic release
+      run: yarn semantic-release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

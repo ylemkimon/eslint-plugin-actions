@@ -1,0 +1,12 @@
+{
+  "name": "test",
+  "private": true,
+  "scripts": {
+    "test": "cp test.eslintrc.js .eslintrc.js && yarn test:lint && yarn test:fix && rm .eslintrc.js",
+    "test:lint": "yarn eslint --ext js,yml . | diff -I '^/.*' fixtures/result.txt -",
+    "test:fix": "cp .github/workflows/test.yml test.yml.bak && yarn eslint --ext js,yml --fix . | diff -I '^/.*' fixtures/result-fixed.txt - && diff .github/workflows/test.yml .github/workflows-fixed/test.yml && cp test.yml.bak .github/workflows/test.yml"
+  },
+  "devDependencies": {
+    "eslint-plugin-actions": "../"
+  }
+}
