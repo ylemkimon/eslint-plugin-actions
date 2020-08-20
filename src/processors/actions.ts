@@ -4,7 +4,7 @@ import { YAMLError, YAMLWarning } from 'yaml/util';
 import { CST } from 'yaml/parse-cst';
 import { Linter } from 'eslint';
 
-import { SCRIPT_ACTIONS } from '../util/constants';
+import { PLUGIN_NAME, SCRIPT_ACTIONS } from '../util/constants';
 import { Delta, Position, Block, ESLintBlock } from '../util/types';
 
 let blocks: Block[] = [];
@@ -114,7 +114,7 @@ function preprocess(text: string): ESLintBlock[] {
         if (script.type !== 'BLOCK_LITERAL') {
           warnings.push({
             name: 'YAMLWarning',
-            message: 'Only a literal block is supported by eslint-plugin-actions',
+            message: `Only a literal block is supported by eslint-plugin-${PLUGIN_NAME}`,
             linePos,
             makePretty: () => null,
           });
@@ -160,7 +160,7 @@ function postprocess(messages: Linter.LintMessage[][]): Linter.LintMessage[] {
   return errors.concat(warnings).map((
     {name, message, linePos}
   ): Linter.LintMessage => ({
-    ruleId: `actions/${name}`,
+    ruleId: `${PLUGIN_NAME}/${name}`,
     severity: name === 'YAMLWarning' ? 1 : 2,
     message: message.split(' at line ')[0], // strip pretty context
     line: linePos && linePos.start.line || 1,

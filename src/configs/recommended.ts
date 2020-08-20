@@ -1,6 +1,6 @@
 import { Linter } from 'eslint';
 
-import { WORKFLOW_DIR, WORKFLOW_FILE } from '../util/constants';
+import { PLUGIN_NAME, WORKFLOW_DIR, WORKFLOW_FILE } from '../util/constants';
 
 const ignorePatterns = [
   // ignore other YAML files
@@ -15,11 +15,11 @@ if (WORKFLOW_DIR.startsWith('.')) {
 }
 
 const recommended: Linter.Config = {
-  plugins: ['actions'],
+  plugins: [PLUGIN_NAME],
   ignorePatterns,
   overrides: [{
     files: WORKFLOW_FILE.map(f => `${WORKFLOW_DIR}/${f}`),
-    processor: 'actions/actions',
+    processor: `${PLUGIN_NAME}/actions`,
   }, {
     files: WORKFLOW_FILE.map(f => `${WORKFLOW_DIR}/${f}/**/*.js`),
     env: { // Node.js 12

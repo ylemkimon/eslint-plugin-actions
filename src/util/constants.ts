@@ -1,5 +1,7 @@
 import { Action } from './types';
 
+export const PLUGIN_NAME = 'actions';
+
 export const WORKFLOW_DIR = '.github/workflows';
 export const WORKFLOW_FILE = ['*.yml', '*.yaml'];
 
