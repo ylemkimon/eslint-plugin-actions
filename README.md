@@ -5,6 +5,7 @@
 
 Lint JS inside GitHub Actions workflow
 
+![A JS script in a GitHub workflow editor has red squiggly underlines. A tooltip explains the problem.](./screenshot.png)
 
 ## Installation
 
