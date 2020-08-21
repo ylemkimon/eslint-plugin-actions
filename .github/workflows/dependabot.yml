@@ -35,10 +35,12 @@ jobs:
         # restore package.json from the last commit
         git checkout HEAD -- package.json
 
-        yarn install
+        yarn install # disable post-install scripts
 
         # deduplicate lockfile
         yarn deduplicate
+      env:
+        YARN_ENABLE_SCRIPTS: 0
     - name: Config Git
       run: |
         # use personal access token to allow triggering new workflow
