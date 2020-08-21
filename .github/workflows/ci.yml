@@ -16,6 +16,11 @@ jobs:
       matrix:
         node: [10, 12, 14]
         eslint: [6, 7]
+        test-node: [false]
+        include:
+        - node: 14
+          eslint: 6
+          test-node: 8
       fail-fast: false
 
     steps:
@@ -34,6 +39,16 @@ jobs:
 
     - name: Build plugin
       run: yarn build
+
+    - name: Use Node.js ${{ matrix.test-node }} for testing
+      uses: actions/setup-node@v1
+      if: matrix.test-node
+      with:
+        node-version: ${{ matrix.test-node }}
+
+    - name: Use Yarn 1
+      run: echo "::set-env name=YARN_IGNORE_PATH::1"
+      if: matrix.test-node && matrix.test-node < 10
 
     - name: Run tests
       run: |
