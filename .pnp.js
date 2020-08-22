@@ -31,7 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackPool": [
       [
         "@types/eslint",
-        "npm:7.2.0"
+        "npm:7.2.1"
       ],
       [
         "@typescript-eslint/eslint-plugin",
@@ -65,7 +65,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
-            ["@types/eslint", "npm:7.2.0"],
+            ["@types/eslint", "npm:7.2.1"],
             ["@typescript-eslint/eslint-plugin", "virtual:27fe8d79a59a99921911f3fab85650adda48e509cf23f2d2a2364346fb9eaee40254939e89b65e2a37417c03534d68b4e44410dd87f4977882f56d8c70889e7b#npm:3.9.1"],
             ["@typescript-eslint/parser", "virtual:27fe8d79a59a99921911f3fab85650adda48e509cf23f2d2a2364346fb9eaee40254939e89b65e2a37417c03534d68b4e44410dd87f4977882f56d8c70889e7b#npm:3.9.1"],
             ["eslint", "npm:7.7.0"],
@@ -415,10 +415,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/eslint", [
-        ["npm:7.2.0", {
-          "packageLocation": "./.yarn/cache/@types-eslint-npm-7.2.0-df7d703c08-dcf0fee617.zip/node_modules/@types/eslint/",
+        ["npm:7.2.1", {
+          "packageLocation": "./.yarn/cache/@types-eslint-npm-7.2.1-7342e7a977-01f6904873.zip/node_modules/@types/eslint/",
           "packageDependencies": [
-            ["@types/eslint", "npm:7.2.0"],
+            ["@types/eslint", "npm:7.2.1"],
             ["@types/estree", "npm:0.0.45"],
             ["@types/json-schema", "npm:7.0.5"]
           ],
@@ -2187,7 +2187,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["eslint-plugin-actions", "workspace:."],
-            ["@types/eslint", "npm:7.2.0"],
+            ["@types/eslint", "npm:7.2.1"],
             ["@typescript-eslint/eslint-plugin", "virtual:27fe8d79a59a99921911f3fab85650adda48e509cf23f2d2a2364346fb9eaee40254939e89b65e2a37417c03534d68b4e44410dd87f4977882f56d8c70889e7b#npm:3.9.1"],
             ["@typescript-eslint/parser", "virtual:27fe8d79a59a99921911f3fab85650adda48e509cf23f2d2a2364346fb9eaee40254939e89b65e2a37417c03534d68b4e44410dd87f4977882f56d8c70889e7b#npm:3.9.1"],
             ["eslint", "npm:7.7.0"],
