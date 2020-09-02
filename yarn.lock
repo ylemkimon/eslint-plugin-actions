@@ -313,12 +313,12 @@ __metadata:
   linkType: hard
 
 "@types/eslint@npm:^7.2.0":
-  version: 7.2.1
-  resolution: "@types/eslint@npm:7.2.1"
+  version: 7.2.2
+  resolution: "@types/eslint@npm:7.2.2"
   dependencies:
     "@types/estree": "*"
     "@types/json-schema": "*"
-  checksum: 01f690487392851f303ae2ed286abbf9bf17a9c98668e8f75b5ebf6eca8c5ec9032e2f34d12035f606d311bfeffb68a807293933d3856957ca0cfeef1c577d52
+  checksum: b51f46c0eb9593505024c98d1d6c594b64a4b19f848e2caff08155f14a1552a4700d5857cf38ac3bdaff055548d665f26b205764d74e601cd69796f5d31bfbeb
   languageName: node
   linkType: hard
 
