@@ -1,0 +1,10 @@
+{
+  "extends": [
+    "config:base",
+    ":maintainLockFilesWeekly",
+    ":widenPeerDependencies"
+  ],
+  "ignorePaths": [".yarn/sdks/**"],
+  "rangeStrategy": "update-lockfile",
+  "postUpdateOptions": ["yarnDedupeHighest"]
+}
