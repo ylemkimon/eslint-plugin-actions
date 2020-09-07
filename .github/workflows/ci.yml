@@ -24,6 +24,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        persist-credentials: false # minimize exposure and prevent accidental pushes
 
     - name: Use Node.js ${{ matrix.node }}
       uses: actions/setup-node@v1
@@ -32,6 +34,8 @@ jobs:
 
     - name: Install dependencies
       run: yarn --immutable
+      env:
+        YARN_ENABLE_SCRIPTS: 0 # disable postinstall scripts
 
     - name: Lint code
       run: yarn test:lint
@@ -63,6 +67,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        persist-credentials: false # minimize exposure and prevent accidental pushes
 
     - name: Use Node.js 12
       uses: actions/setup-node@v1
@@ -71,6 +77,8 @@ jobs:
 
     - name: Install dependencies
       run: yarn --immutable
+      env:
+        YARN_ENABLE_SCRIPTS: 0 # disable postinstall scripts
 
     - name: Build plugin
       run: yarn build
