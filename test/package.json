@@ -10,6 +10,6 @@
     "eslint-plugin-actions": "../"
   },
   "resolutions": {
-    "eslint/inquirer": "7.2.0"
+    "eslint/inquirer": "7.3.3"
   }
 }
