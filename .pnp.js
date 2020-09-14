@@ -40,7 +40,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/eslint", "npm:7.2.2"],
             ["@typescript-eslint/eslint-plugin", "virtual:27fe8d79a59a99921911f3fab85650adda48e509cf23f2d2a2364346fb9eaee40254939e89b65e2a37417c03534d68b4e44410dd87f4977882f56d8c70889e7b#npm:4.1.0"],
             ["@typescript-eslint/parser", "virtual:27fe8d79a59a99921911f3fab85650adda48e509cf23f2d2a2364346fb9eaee40254939e89b65e2a37417c03534d68b4e44410dd87f4977882f56d8c70889e7b#npm:4.1.0"],
-            ["eslint", "npm:7.8.1"],
+            ["eslint", "npm:7.9.0"],
             ["semantic-release", "npm:17.1.1"],
             ["typescript", "patch:typescript@npm%3A4.0.2#builtin<compat/typescript>::version=4.0.2&hash=5b02a2"],
             ["yaml", "npm:1.10.0"]
@@ -519,7 +519,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:27fe8d79a59a99921911f3fab85650adda48e509cf23f2d2a2364346fb9eaee40254939e89b65e2a37417c03534d68b4e44410dd87f4977882f56d8c70889e7b#npm:4.1.0"],
             ["@typescript-eslint/scope-manager", "npm:4.1.0"],
             ["debug", "virtual:18c7f62d46e3b11b75bacf415dd3643ad639bd8214511b35c5552bbc85e9b6b92324318a6f3571677033bbd8969b925ecf0001e058459d983a5e2ecc470a2707#npm:4.2.0"],
-            ["eslint", "npm:7.8.1"],
+            ["eslint", "npm:7.9.0"],
             ["functional-red-black-tree", "npm:1.0.1"],
             ["regexpp", "npm:3.1.0"],
             ["semver", "npm:7.3.2"],
@@ -547,7 +547,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/scope-manager", "npm:4.1.0"],
             ["@typescript-eslint/types", "npm:4.1.0"],
             ["@typescript-eslint/typescript-estree", "virtual:c2db20612869365a25038b307971a4f2be9145f13b5138fb5d3f7b83d17a399768efd66a1dbdfb4c927185140912acae551c7314ca8eca7e700083d934275fd7#npm:4.1.0"],
-            ["eslint", "npm:7.8.1"],
+            ["eslint", "npm:7.9.0"],
             ["eslint-scope", "npm:5.1.0"],
             ["eslint-utils", "npm:2.1.0"]
           ],
@@ -569,7 +569,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/types", "npm:4.1.0"],
             ["@typescript-eslint/typescript-estree", "virtual:ad2e576ea6e9219281ed9211cdf2c8de8c6b57cf9017216b3988eb3f559a2d561a8d8b607a22e6c198c1a14de832269519ae2401c8109368c35ee84d76806ac7#npm:4.1.0"],
             ["debug", "virtual:18c7f62d46e3b11b75bacf415dd3643ad639bd8214511b35c5552bbc85e9b6b92324318a6f3571677033bbd8969b925ecf0001e058459d983a5e2ecc470a2707#npm:4.2.0"],
-            ["eslint", "npm:7.8.1"],
+            ["eslint", "npm:7.9.0"],
             ["typescript", "patch:typescript@npm%3A4.0.2#builtin<compat/typescript>::version=4.0.2&hash=5b02a2"]
           ],
           "packagePeers": [
@@ -2161,10 +2161,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["eslint", [
-        ["npm:7.8.1", {
-          "packageLocation": "./.yarn/cache/eslint-npm-7.8.1-24e72a07b3-0168d826ab.zip/node_modules/eslint/",
+        ["npm:7.9.0", {
+          "packageLocation": "./.yarn/cache/eslint-npm-7.9.0-d45daba7d6-295fe8c442.zip/node_modules/eslint/",
           "packageDependencies": [
-            ["eslint", "npm:7.8.1"],
+            ["eslint", "npm:7.9.0"],
             ["@babel/code-frame", "npm:7.10.4"],
             ["@eslint/eslintrc", "npm:0.1.3"],
             ["ajv", "npm:6.12.4"],
@@ -2214,7 +2214,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/eslint", "npm:7.2.2"],
             ["@typescript-eslint/eslint-plugin", "virtual:27fe8d79a59a99921911f3fab85650adda48e509cf23f2d2a2364346fb9eaee40254939e89b65e2a37417c03534d68b4e44410dd87f4977882f56d8c70889e7b#npm:4.1.0"],
             ["@typescript-eslint/parser", "virtual:27fe8d79a59a99921911f3fab85650adda48e509cf23f2d2a2364346fb9eaee40254939e89b65e2a37417c03534d68b4e44410dd87f4977882f56d8c70889e7b#npm:4.1.0"],
-            ["eslint", "npm:7.8.1"],
+            ["eslint", "npm:7.9.0"],
             ["semantic-release", "npm:17.1.1"],
             ["typescript", "patch:typescript@npm%3A4.0.2#builtin<compat/typescript>::version=4.0.2&hash=5b02a2"],
             ["yaml", "npm:1.10.0"]
