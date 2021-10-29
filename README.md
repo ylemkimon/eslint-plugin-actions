@@ -9,7 +9,7 @@ Lint JS inside GitHub Actions workflow
 
 ## Installation
 
-You'll first need to install [ESLint](http://eslint.org) 6.7 or greater:
+You'll first need to install [ESLint](http://eslint.org) 8 or greater:
 ```
 $ npm i eslint --save-dev
 $ yarn add -D eslint
@@ -31,11 +31,6 @@ Extending the `plugin:actions/recommended` config will enable the processor on a
 }
 ```
 
-With ESLint v7, you can run it as usual. If you're using ESLint v6, you'll need to pass [`--ext` option](https://eslint.org/docs/user-guide/command-line-interface#ext) to include YAML files:
-```
-$ eslint --ext js,yml,yaml .
-```
-
 Currently, only literal blocks (`|`) are supported and it's recommended to use them:
 ```yaml
 # .github/workflows/ci.yml
@@ -54,16 +49,9 @@ The autofixing (`--fix`) is supported, but it's still experimental and whitespac
 ### Advanced Configuration
 
 Dotfiles are ignored by ESLint by default. To lint files inside `.github`, you'll need to add `!.github` to
-`.eslintignore` file or `ignorePatterns` of your configuration file. In ESLint v6, all files having extensions
-specified by `--ext` option are included, so to exclude non-workflow YAML files, add `*.yml`, `*.yaml`, and
-`!/.github/workflows/*.{yml,yaml}`:
+`.eslintignore` file or `ignorePatterns` of your configuration file:
 ```gitignore
 !/.github
-# only for ESLint v6:
-*.yml
-*.yaml
-!/.github/workflows/*.yml
-!/.github/workflows/*.yaml
 ```
 
 Then, add `actions` to the plugins section of your configuration file. You can omit the `eslint-plugin-` prefix:
