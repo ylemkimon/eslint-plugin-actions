@@ -41,7 +41,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.1.0"],
             ["semantic-release", "npm:18.0.0"],
             ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=ddd1e8"],
-            ["yaml", "npm:1.10.0"]
+            ["yaml", "npm:1.10.2"]
           ],
           "linkType": "SOFT",
         }]
@@ -2261,7 +2261,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.1.0"],
             ["semantic-release", "npm:18.0.0"],
             ["typescript", "patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=ddd1e8"],
-            ["yaml", "npm:1.10.0"]
+            ["yaml", "npm:1.10.2"]
           ],
           "linkType": "SOFT",
         }]
@@ -6570,6 +6570,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/yaml-npm-1.10.0-3e2d763b45-ae81d29a82.zip/node_modules/yaml/",
           "packageDependencies": [
             ["yaml", "npm:1.10.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:1.10.2", {
+          "packageLocation": "./.yarn/cache/yaml-npm-1.10.2-0e780aebdf-ce4ada136e.zip/node_modules/yaml/",
+          "packageDependencies": [
+            ["yaml", "npm:1.10.2"]
           ],
           "linkType": "HARD",
         }]

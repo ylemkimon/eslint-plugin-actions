@@ -22,7 +22,7 @@
     "url": "https://github.com/ylemkimon/eslint-plugin-actions.git"
   },
   "dependencies": {
-    "yaml": "^1.10.0"
+    "yaml": "^1.10.2"
   },
   "devDependencies": {
     "@types/eslint": "^7.28.2",

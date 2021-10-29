@@ -1790,7 +1790,7 @@ __metadata:
     eslint: ^8.1.0
     semantic-release: ^18.0.0
     typescript: ^4.4.4
-    yaml: ^1.10.0
+    yaml: ^1.10.2
   peerDependencies:
     eslint: ^8.0.0
   languageName: unknown
@@ -5685,6 +5685,13 @@ resolve@^1.10.0:
   version: 1.10.0
   resolution: "yaml@npm:1.10.0"
   checksum: ae81d29a82d70a9dcf6f7fa8d9e0898f2148570521acb60c1ac9bdafff298dfc86b591a0983f6cc4f9fb11fb420df4c786919060dfd970d2533de20748ccbb28
+  languageName: node
+  linkType: hard
+
+"yaml@npm:^1.10.2":
+  version: 1.10.2
+  resolution: "yaml@npm:1.10.2"
+  checksum: ce4ada136e8a78a0b08dc10b4b900936912d15de59905b2bf415b4d33c63df1d555d23acb2a41b23cf9fb5da41c256441afca3d6509de7247daa062fd2c5ea5f
   languageName: node
   linkType: hard
 
