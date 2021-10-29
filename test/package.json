@@ -7,9 +7,6 @@
     "test:fix": "cp .github/workflows/test.yml test.yml.bak && yarn eslint --ext js,yml --fix . | diff -I '^[/$iy].*' fixtures/result-fixed.txt - && diff .github/workflows/test.yml .github/workflows-fixed/test.yml && cp test.yml.bak .github/workflows/test.yml"
   },
   "devDependencies": {
-    "eslint-plugin-actions": "../"
-  },
-  "resolutions": {
-    "eslint/inquirer": "7.2.0"
+    "eslint-plugin-actions": "portal:../"
   }
 }

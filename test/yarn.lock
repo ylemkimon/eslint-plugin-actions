@@ -2,31 +2,30 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 4
-  cacheKey: 5
+  version: 5
+  cacheKey: 8
 
-"eslint-plugin-actions@file:../::locator=test%40workspace%3A.":
-  version: 0.0.0
-  resolution: "eslint-plugin-actions@file:../::locator=test%40workspace%3A."
+"eslint-plugin-actions@portal:../::locator=test%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "eslint-plugin-actions@portal:../::locator=test%40workspace%3A."
   dependencies:
     yaml: ^1.10.0
   peerDependencies:
-    eslint: ^6.7.0 || ^7.0.0
-  checksum: c320fdbb44b9c5c09f09728acbb86afc94b04a5d1b66a77d6cce8b731e0d6e2db70af320dda977063145930d723507a7364b238ef64d45c1e004915e957678bc
+    eslint: ^8.0.0
   languageName: node
-  linkType: hard
+  linkType: soft
 
 "test@workspace:.":
   version: 0.0.0-use.local
   resolution: "test@workspace:."
   dependencies:
-    eslint-plugin-actions: ../
+    eslint-plugin-actions: "portal:../"
   languageName: unknown
   linkType: soft
 
 "yaml@npm:^1.10.0":
-  version: 1.10.0
-  resolution: "yaml@npm:1.10.0"
-  checksum: d4cc9f9724f8d0aebc2cf52e4e6aa7059f12d50deb54b5225d103462fb2af36e5c0bb419101ca4b1f0cd3b4db9e4139cf2c690e863ac6227648d39d6f4e2522c
+  version: 1.10.2
+  resolution: "yaml@npm:1.10.2"
+  checksum: ce4ada136e8a78a0b08dc10b4b900936912d15de59905b2bf415b4d33c63df1d555d23acb2a41b23cf9fb5da41c256441afca3d6509de7247daa062fd2c5ea5f
   languageName: node
   linkType: hard
