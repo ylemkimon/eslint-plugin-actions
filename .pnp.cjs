@@ -89,7 +89,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ignore", "npm:4.0.6"],
             ["import-fresh", "npm:3.2.1"],
             ["js-yaml", "npm:3.14.0"],
-            ["minimatch", "npm:3.0.4"],
+            ["minimatch", "npm:3.1.2"],
             ["strip-json-comments", "npm:3.1.1"]
           ],
           "linkType": "HARD",
@@ -111,7 +111,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@humanwhocodes/config-array", "npm:0.6.0"],
             ["@humanwhocodes/object-schema", "npm:1.2.0"],
             ["debug", "virtual:da5f51e2f3d0267e747a2e809f89f754cbe22aadd5a58dcbf963b777cf5a7fe2690fd104a1eb90739690845e3103b76db2591990fb4f32e309b046db4ea1594b#npm:4.2.0"],
-            ["minimatch", "npm:3.0.4"]
+            ["minimatch", "npm:3.1.2"]
           ],
           "linkType": "HARD",
         }]
@@ -285,7 +285,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@npmcli/map-workspaces", "npm:2.0.0"],
             ["@npmcli/name-from-folder", "npm:1.0.1"],
             ["glob", "npm:7.1.6"],
-            ["minimatch", "npm:3.0.4"],
+            ["minimatch", "npm:3.1.2"],
             ["read-package-json-fast", "npm:2.0.3"]
           ],
           "linkType": "HARD",
@@ -2236,7 +2236,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["json-stable-stringify-without-jsonify", "npm:1.0.1"],
             ["levn", "npm:0.4.1"],
             ["lodash.merge", "npm:4.6.2"],
-            ["minimatch", "npm:3.0.4"],
+            ["minimatch", "npm:3.1.2"],
             ["natural-compare", "npm:1.4.0"],
             ["optionator", "npm:0.9.1"],
             ["progress", "npm:2.0.3"],
@@ -2785,7 +2785,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fs.realpath", "npm:1.0.0"],
             ["inflight", "npm:1.0.6"],
             ["inherits", "npm:2.0.4"],
-            ["minimatch", "npm:3.0.4"],
+            ["minimatch", "npm:3.1.2"],
             ["once", "npm:1.4.0"],
             ["path-is-absolute", "npm:1.0.1"]
           ],
@@ -2798,7 +2798,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fs.realpath", "npm:1.0.0"],
             ["inflight", "npm:1.0.6"],
             ["inherits", "npm:2.0.4"],
-            ["minimatch", "npm:3.0.4"],
+            ["minimatch", "npm:3.1.2"],
             ["once", "npm:1.4.0"],
             ["path-is-absolute", "npm:1.0.1"]
           ],
@@ -3092,7 +3092,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/ignore-walk-npm-3.0.4-dc5095baa0-9e9c5ef6c3.zip/node_modules/ignore-walk/",
           "packageDependencies": [
             ["ignore-walk", "npm:3.0.4"],
-            ["minimatch", "npm:3.0.4"]
+            ["minimatch", "npm:3.1.2"]
           ],
           "linkType": "HARD",
         }],
@@ -3100,7 +3100,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/ignore-walk-npm-4.0.1-e301e7e75f-903cd5cb68.zip/node_modules/ignore-walk/",
           "packageDependencies": [
             ["ignore-walk", "npm:4.0.1"],
-            ["minimatch", "npm:3.0.4"]
+            ["minimatch", "npm:3.1.2"]
           ],
           "linkType": "HARD",
         }]
@@ -3654,7 +3654,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@npmcli/installed-package-contents", "npm:1.0.7"],
             ["binary-extensions", "npm:2.2.0"],
             ["diff", "npm:5.0.0"],
-            ["minimatch", "npm:3.0.4"],
+            ["minimatch", "npm:3.1.2"],
             ["npm-package-arg", "npm:8.1.5"],
             ["pacote", "npm:11.3.5"],
             ["tar", "npm:6.1.11"]
@@ -4106,10 +4106,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["minimatch", [
-        ["npm:3.0.4", {
-          "packageLocation": "./.yarn/cache/minimatch-npm-3.0.4-6e76f51c23-66ac295f8a.zip/node_modules/minimatch/",
+        ["npm:3.1.2", {
+          "packageLocation": "./.yarn/cache/minimatch-npm-3.1.2-9405269906-c154e56640.zip/node_modules/minimatch/",
           "packageDependencies": [
-            ["minimatch", "npm:3.0.4"],
+            ["minimatch", "npm:3.1.2"],
             ["brace-expansion", "npm:1.1.11"]
           ],
           "linkType": "HARD",
